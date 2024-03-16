@@ -1,0 +1,43 @@
+body {
+    font-family: "Avenir Next";
+}
+
+li {
+    list-style: none;
+
+}
+
+.header {
+    background-color: darkgreen;
+    color: white;
+    height: 100px;
+}
+
+.header-left {
+    font-size: 40px;
+    margin-left: 50px;
+    float: left;
+    padding-top: 20px;
+}
+
+.header-right {
+    margin-right: 30px;
+}
+
+.header-right li{
+    font-size: 30px;
+    float: right;
+    padding: 30px 20px;
+
+}
+
+.login-box {
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 40px 25%;
+    padding: 40px 40px;
+}
+
+.login-form {
+    padding: 0px 25%;
+}
