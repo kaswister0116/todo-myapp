@@ -70,7 +70,7 @@ input {
     border-radius: 10px;
     margin: 40px auto;
     padding: 40px 40px;
-    width: 50%;
+    width: 40%;
 }
 
 .title-signin {
@@ -104,7 +104,7 @@ input {
 
 .login-input {
     width: 70%;
-    min-width: 200px;
+    min-width: 150px;
     font-size: 20px;
 }
 
@@ -135,4 +135,97 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+
+.todo-main{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+}
+.create-todo-box {
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 40px 40px;
+    width: 40%;
+}
+
+.title-create-todo {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.create-todo-form div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.border {
+    border-bottom: 1px solid gray;
+
+}
+
+.create-todo-label {
+    font-size: 20px;
+    width: 30%;
+    min-width: 100px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.create-todo-input {
+    width: 70%;
+    min-width: 150px;
+    font-size: 20px;
+}
+
+.create-todo-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.create-todo-btn {
+    background-color: darkgreen;
+    color: white;
+    height: 48px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.create-todo-btn:hover {
+    cursor: pointer;
+}
+
+.todo-main-title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.todolist-box {
+    border: solid 1px black;
+    border-radius: 10px;
+    margin: 40px auto;
+    padding: 40px 0px;
+    width: 30%;
+}
+
+.list {
+    color: white;
+    background-color: darkgreen;
+    border-radius: 10px;
+    height: 50px;
+    width: 90%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: auto;
 }
