@@ -7,43 +7,120 @@ li {
 
 }
 
+input {
+    border: none;
+    outline: none;
+}
+
 .header {
-    background-color: darkgreen;
-    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
     height: 100px;
+    width: 100%;
+    color: white;
+    background-color: darkgreen;
 }
 
 .header-left {
     font-size: 40px;
     margin-left: 50px;
-    float: left;
-    padding-top: 20px;
+
 }
 
 .header-right {
-    margin-right: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-right ul {
+    display: flex;
+    padding: 0;
 }
 
 .header-right li{
     font-size: 30px;
-    float: right;
     padding: 30px 20px;
+}
 
+.header-right a{
+    color: white;
+    text-decoration: none;
+}
+
+.header-right a:hover {
+    cursor: pointer;
 }
 
 .login-main {
-    height: 300px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    /* min-height: 100vh; */
+    /* height: 300px; */
 }
 
 .login-box {
     border: solid 1px black;
     border-radius: 10px;
-    margin: 40px 25%;
+    margin: 40px auto;
     padding: 40px 40px;
+    width: 50%;
 }
 
-.login-form {
-    padding: 0px 25%;
+.title-signin {
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-btn:hover {
+    cursor: pointer;
+}
+
+.login-form div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.border {
+    border-bottom: 1px solid gray;
+
+}
+
+.login-label {
+    font-size: 20px;
+    width: 30%;
+    min-width: 100px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.login-input {
+    width: 70%;
+    min-width: 200px;
+    font-size: 20px;
+}
+
+.login-btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.login-btn {
+    background-color: darkgreen;
+    color: white;
+    height: 48px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: white;
 }
 
 footer {
