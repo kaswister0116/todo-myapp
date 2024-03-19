@@ -1,5 +1,12 @@
+<?php
+
+?>
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+    <?php
+        //include_once
+    ?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,14 +29,14 @@
         <div class="login-box">
             <p class="title-signin">Sign In</p>
                 
-            <form action="処理先" method="post" class="login-form">
+            <form action="./action/login.php" method="post" class="login-form">
                 <div class="border">
                     <label class="login-label">Email</label>
-                    <input type="text" name="email" class="login-input" placeholder="">
+                    <input type="text" name="user_email" class="login-input" placeholder="">
                 </div>
                 <div class="border">
                     <label class="login-label">Password</label>
-                    <input type="password" name="password" class="login-input" placeholder="">
+                    <input type="password" name="user_password" class="login-input" placeholder="">
                 </div>
                 <div class="login-btn-container">
                     <button class="login-btn" type="submit">ログイン</button>
