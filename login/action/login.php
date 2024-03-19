@@ -26,7 +26,7 @@ if ($statement = $database_handler->prepare('SELECT id, username, password FROM 
 
     $name = $user['name'];
     $id = $user['id'];
-    header('Location: ../../main.php');
+    header('Location: ../../list');
     exit;
 }
 ?>
