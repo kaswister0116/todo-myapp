@@ -1,6 +1,6 @@
 <?php
 session_start();
-//require_once '../login/action/login.php';
+//require '../common/';
 
 ?>
 
@@ -38,15 +38,23 @@ session_start();
             echo '</div>';
         }
         ?>
-            <p class="title-signin">Sign In</p>
+            <p class="title-signin">Sign Up</p>
             <form action="./action/login.php" method="post" class="login-form">
                 <div class="border">
+                        <label class="login-label">Name</label>
+                        <input type="text" name="user_name" class="login-input" placeholder="お名前">
+                    </div>    
+                <div class="border">
                     <label class="login-label">Email</label>
-                    <input type="text" name="user_email" class="login-input" placeholder="email" value="<?php echo isset($_SESSION['form_input']['user_email']) ? $_SESSION['form_input']['user_email'] : 'bbb' ?>">
+                    <input type="text" name="user_email" class="login-input" placeholder="アドレス">
                 </div>
                 <div class="border">
                     <label class="login-label">Password</label>
-                    <input type="password" name="user_password" class="login-input" placeholder="">
+                    <input type="password" name="user_password1" class="login-input" placeholder="パスワード">
+                </div>
+                <div class="border">
+                    <label class="login-label">Password</label>
+                    <input type="password" name="user_password2" class="login-input" placeholder="もう一度入力してください">
                 </div>
                 <div class="login-btn-container">
                     <button class="login-btn" type="submit">ログイン</button>
