@@ -18,7 +18,7 @@
             <ul>
                 <li><a href="#">HOME</a></li>
                 <li><a href="#">MYPAGE</a></li>
-                <li><a href="#">LOGOUT</a></li>
+                <li><a href="./action/logout.php">LOGOUT</a></li>
             </ul>
         </div>
     </div>

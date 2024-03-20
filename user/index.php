@@ -22,8 +22,8 @@ session_start();
         </div>
         <div class="header-right">
             <ul>
-                <li><a href="#">SIGN IN</a></li>
-                <li><a href="#">SIGN UP</a></li>
+                <li><a href="../index.php">SIGN IN</a></li>
+                <li><a href="../user/">SIGN UP</a></li>
             </ul>
         </div>
     </div>
@@ -39,7 +39,7 @@ session_start();
         }
         ?>
             <p class="title-signin">Sign Up</p>
-            <form action="./action/login.php" method="post" class="login-form">
+            <form action="./action/register.php" method="post" class="login-form">
                 <div class="border">
                         <label class="login-label">Name</label>
                         <input type="text" name="user_name" class="login-input" placeholder="お名前">
@@ -57,7 +57,7 @@ session_start();
                     <input type="password" name="user_password2" class="login-input" placeholder="もう一度入力してください">
                 </div>
                 <div class="login-btn-container">
-                    <button class="login-btn" type="submit">ログイン</button>
+                    <button class="login-btn" type="submit">登録</button>
                 </div>
             </form>
         </div>

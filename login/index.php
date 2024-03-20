@@ -22,8 +22,8 @@ session_start();
         </div>
         <div class="header-right">
             <ul>
-                <li><a href="#">SIGN IN</a></li>
-                <li><a href="#">SIGN UP</a></li>
+                <li><a href="./">SIGN IN</a></li>
+                <li><a href="../user/">SIGN UP</a></li>
             </ul>
         </div>
     </div>

@@ -79,3 +79,10 @@ function mailAddressDuplicationCheck(&$errors, $check_value, $message) {
         array_push($errors, $message);
     }
 }
+
+//入力したパスワード2つが同一かチェック
+function isPasswordSame(&$errors, $password1, $password2, $message) {
+    if ( $password1 !== $password2) {
+        array_push($errors, $message);
+    }
+}
