@@ -42,7 +42,7 @@ session_start();
             <form action="./action/login.php" method="post" class="login-form">
                 <div class="border">
                     <label class="login-label">Email</label>
-                    <input type="text" name="user_email" class="login-input" placeholder="email" value="<?php echo isset($_SESSION['form_input']['user_email']) ? $_SESSION['form_input']['user_email'] : 'bbb' ?>">
+                    <input type="text" name="user_email" class="login-input" placeholder="email" value="<?php echo isset($_SESSION['form_input']['user_email']) ? $_SESSION['form_input']['user_email'] : '' ?>">
                 </div>
                 <div class="border">
                     <label class="login-label">Password</label>

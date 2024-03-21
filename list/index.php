@@ -1,5 +1,11 @@
 <?php
+require '../common/auth.php';
+require '../common/database.php';
 
+if(!isLogin()) {
+    header("Location: ../login/");
+    exit;
+}
 ?>
 <!DOCTYPE html>
 <html lang="ja">

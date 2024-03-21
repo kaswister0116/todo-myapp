@@ -41,10 +41,8 @@ if($_SESSION['errors']) {
 //ログイン処理
 $database_handler = getDatabaseConnection();
 if ($statement = $database_handler->prepare('SELECT id, username, password FROM users
-                                                WHERE email = :user_email
-                                                AND password = :user_password')){
+                                                WHERE email = :user_email')){
     $statement->bindParam(':user_email', $user_email);
-    $statement->bindParam(':user_password', $user_password);
     $statement->execute();
 
     $user = $statement->fetch(PDO::FETCH_ASSOC);
@@ -56,9 +54,20 @@ if ($statement = $database_handler->prepare('SELECT id, username, password FROM 
         exit;
     }
 
-    $name = $user['name'];
+    $name = $user['username'];
     $id = $user['id'];
-    header('Location: ../../list');
-    exit;
+    if (password_verify($user_password, $user['password'])){
+        $_SESSION['user'] = [
+            'user_name' => $name,
+            'id' => $id
+        ];
+        header('Location: ../../list');
+    } else {
+        $_SESSION['errors'] = [
+            'メールアドレスまたはパスワードが間違っています。'
+        ];
+        header('Location: ../../login/');
+        exit;
+    }
 }
 ?>
